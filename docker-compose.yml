@@ -1,0 +1,8 @@
+version: '3'
+services:
+  crawler:
+    build: .
+    command: "python3 scrape-kijiji.py"
+    volumes:
+      - .:/app
+
